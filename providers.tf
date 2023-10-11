@@ -24,4 +24,12 @@ provider "kubectl" {
   config_context = local.kube_context
 }
 
+terraform {
+  required_providers {
+    kubectl = {
+      source  = "gavinbunney/kubectl"
+    }
+  }
+}
+
 
