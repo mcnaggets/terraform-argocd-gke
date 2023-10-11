@@ -24,6 +24,11 @@ variable "argocd_host" {
 }
 
 variable "argocd_host_tls_name" {
+  type = string
+}
+
+variable "kube_host" {
+  type = string
 }
 
 variable "slack_notification_bot_token" {
