@@ -19,7 +19,6 @@ provider "helm" {
 }
 
 provider "kubectl" {
-  source         = "gavinbunney/kubectl"
   host           = local.gke_host
   config_path    = local.kube_config_path
   config_context = local.kube_context
