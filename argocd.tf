@@ -1,11 +1,3 @@
-data "terraform_remote_state" "gke_cluster" {
-  backend = "gcs"
-  config  = {
-    bucket = "lw-${var.project_id}"
-    prefix = "clusters-tfstate/${var.cluster_name}"
-  }
-}
-
 resource "tls_private_key" "identity" {
   algorithm   = "ECDSA"
   ecdsa_curve = "P521"
