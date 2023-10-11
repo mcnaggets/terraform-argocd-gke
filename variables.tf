@@ -1,16 +1,3 @@
-variable "region" {
-  type    = string
-  default = "us-central1"
-}
-
-variable "project_id" {
-  type = string
-}
-
-variable "cluster_name" {
-  type = string
-}
-
 variable "cluster_type" {
   type = string
 }
@@ -28,6 +15,10 @@ variable "argocd_host_tls_name" {
 }
 
 variable "kube_host" {
+  type = string
+}
+
+variable "kube_config_context" {
   type = string
 }
 
